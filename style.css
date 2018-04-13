@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  font-family: Arial;
+}
+.page {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 958px;
+  border: 2px solid #010101;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page__header {
+  background: #ffc;
+}
+.page__content {
+  background: #cfc;
+  flex-grow: 2;
+}
+.page__footer {
+  background: #ccf;
+}
+.header__logo {
+  padding-top: 16px;
+  position: relative;
+  margin: 0 auto;
+  width: 138px;
+  height: 90px;
+  justify-content: center;
+  display: flex;
+  background: url("imgs/plash.png");
+  background-position-y: -2px;
+  background-repeat: no-repeat;
+}
+.header__title {
+  font-weight: normal;
+  margin: 0;
+  font-size: 46px;
+  padding: 0 64px 76px;
+  text-align: center;
+  margin-top: 276px;
+}
