@@ -6,6 +6,7 @@ body
   font-family Arial
 
 .page
+  position relative
   margin 0 auto
   padding 0
   max-width 958px
@@ -13,16 +14,34 @@ body
   display flex
   flex-direction column
   min-height 100vh
+  z-index 0
+
+
+  &:before
+    content ''
+    display block
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background #72c4f6
+    z-index -1
 
   &__header
-    background #ffc
+    background center 100px url("imgs/bg.png")  no-repeat
+    min-height 550px
+    margin 0 -18px
 
   &__content
     background #cfc
     flex-grow 2
 
   &__footer
-    background #ccf
+    background transparent
+    border-top 2px solid #010101
+    padding 84px 96px
+    //width 468px
 
 // header
 .header
@@ -50,4 +69,50 @@ body
 
 
 
+.footer
+  &__text
+    width 468px
 
+.social
+  list-style none
+  margin 0
+  padding 0
+
+  &__network
+    display inline-block
+
+
+  &__link
+    display block
+    width 24px
+    height 24px
+    background #010101
+
+.menu
+  list-style none
+  margin 0
+  padding 0
+
+  &__list
+    padding 0
+
+  &__item
+    display inline-block
+    padding-left 18px
+
+    &:first-child
+      padding-left 0
+
+    &_caption_copyright
+      padding-left 80px
+
+    a
+      text-decoration none
+      color: inherit
+
+      &:hover
+        text-decoration underline
+        color: inherit
+
+      &:active
+        color: inherit
