@@ -99,6 +99,9 @@ body {
 .general-info p {
   margin-top: 0;
 }
+.history {
+  background: center 450px url("imgs/main_bg.png") no-repeat;
+}
 .people {
   margin: 0;
   padding: 0;
