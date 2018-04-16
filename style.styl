@@ -59,7 +59,7 @@ body
     padding-top 16px
     position relative
     margin 0 auto
-    width 138px
+    width 150px
     height 90px
     justify-content center
     display flex
@@ -78,18 +78,6 @@ body
 
 .block
   padding 80px 96px
-
-.play
-  &__link
-    display block
-    border 2px solid $border-color
-    border-radius 4px
-    width 140px
-    height 80px
-    background center center url("imgs/play.png") no-repeat
-
-.general-info
-  display flex
   position relative
 
   &:before
@@ -101,6 +89,51 @@ body
     left 0
     right 0
     border-top 2px solid $border-color
+
+.play
+  &__link
+    display block
+    border 2px solid $border-color
+    border-radius 4px
+    width 150px
+    height 80px
+    background center center url("imgs/play.png") no-repeat
+
+.general-info
+  display flex
+
+.people
+    margin 0
+    padding 0
+    list-style none
+    display flex
+    justify-content space-around
+
+    &__item
+      width auto
+      text-align center
+      font-weight 600
+
+      
+
+  &__figure
+      margin 0
+      width 150px
+      height 150px
+      border-radius 150px
+      border 2px solid transparent
+      padding 4px
+      margin-bottom 16px
+
+      &:hover
+        border-color #fff
+
+    &__avatar
+      width 138px
+      height 138px
+      display block
+
+
 
   &__text
     margin-right 60px

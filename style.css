@@ -51,7 +51,7 @@ body {
   padding-top: 16px;
   position: relative;
   margin: 0 auto;
-  width: 138px;
+  width: 150px;
   height: 90px;
   justify-content: center;
   display: flex;
@@ -69,20 +69,9 @@ body {
 }
 .block {
   padding: 80px 96px;
-}
-.play__link {
-  display: block;
-  border: 2px solid #010101;
-  border-radius: 4px;
-  width: 140px;
-  height: 80px;
-  background: center center url("imgs/play.png") no-repeat;
-}
-.general-info {
-  display: flex;
   position: relative;
 }
-.general-info:before {
+.block:before {
   content: "";
   display: block;
   position: absolute;
@@ -92,11 +81,51 @@ body {
   right: 0;
   border-top: 2px solid #010101;
 }
-.general-info__text {
+.play__link {
+  display: block;
+  border: 2px solid #010101;
+  border-radius: 4px;
+  width: 150px;
+  height: 80px;
+  background: center center url("imgs/play.png") no-repeat;
+}
+.general-info {
+  display: flex;
+}
+.people {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.people__item {
+  width: auto;
+  text-align: center;
+  font-weight: 600;
+}
+__figure {
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 2px solid transparent;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+__figure:hover {
+  border-color: #fff;
+}
+__avatar {
+  width: 138px;
+  height: 138px;
+  display: block;
+}
+__text {
   margin-right: 60px;
   max-width: 600px;
 }
-.general-info p {
+p {
   margin-top: 0;
 }
 .footer__text {
