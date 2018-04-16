@@ -1,0 +1,22 @@
+{
+  "name": "viorstka-makieta",
+  "version": "1.0.0",
+  "description": "Coursera",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lykovrs/viorstka-makieta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lykovrs/viorstka-makieta/issues"
+  },
+  "homepage": "https://github.com/lykovrs/viorstka-makieta#readme",
+  "devDependencies": {
+    "gulp-sprite-generator": "^0.2.3"
+  }
+}
