@@ -92,6 +92,13 @@ body {
 .general-info {
   display: flex;
 }
+.general-info__text {
+  margin-right: 60px;
+  max-width: 600px;
+}
+.general-info p {
+  margin-top: 0;
+}
 .people {
   margin: 0;
   padding: 0;
@@ -104,7 +111,7 @@ body {
   text-align: center;
   font-weight: 600;
 }
-__figure {
+.people__figure {
   margin: 0;
   width: 150px;
   height: 150px;
@@ -113,20 +120,16 @@ __figure {
   padding: 4px;
   margin-bottom: 16px;
 }
-__figure:hover {
+.people__figure:hover {
   border-color: #fff;
 }
-__avatar {
+.people__avatar {
   width: 138px;
   height: 138px;
   display: block;
 }
-__text {
-  margin-right: 60px;
-  max-width: 600px;
-}
-p {
-  margin-top: 0;
+.people__name {
+  margin-bottom: 60px;
 }
 .footer__text {
   width: 468px;
