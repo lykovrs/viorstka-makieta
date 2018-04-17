@@ -4,6 +4,8 @@
 body {
   background: #fff;
   font-family: Arial;
+  padding: 0;
+  margin: 0;
 }
 p {
   line-height: 1.5rem;
@@ -41,8 +43,19 @@ p:last-child {
 .page:before {
   left: 0;
   right: 0;
-  background: #72c4f6;
   z-index: -2;
+}
+#color-1:checked ~ .page:before {
+  transition: 1s background;
+  background: #72c4f6;
+}
+#color-2:checked ~ .page:before {
+  transition: 1s background;
+  background: #ff8283;
+}
+#color-3:checked ~ .page:before {
+  transition: 1s background;
+  background: #ffe05d;
 }
 .page__header {
   min-height: 550px;
@@ -124,10 +137,14 @@ p:last-child {
   border-radius: 150px;
   border: 2px solid transparent;
   padding: 4px;
-  margin-bottom: 0;
   position: relative;
+  display: block;
 }
-.people__figure:hover {
+.people__figure:hover,
+#color-1:checked ~ .page .people__figure[for="color-1"],
+#color-2:checked ~ .page .people__figure[for="color-2"],
+#color-3:checked ~ .page .people__figure[for="color-3"] {
+  transition: 1s border-color;
   border-color: #fff;
 }
 .people__avatar {
@@ -249,14 +266,17 @@ p:last-child {
 .menu__item_caption_copyright {
   padding-left: 80px;
 }
-.menu__item a {
+.menu__link {
   text-decoration: none;
   color: inherit;
 }
-.menu__item a:hover {
+.menu__link:hover {
   text-decoration: underline;
   color: inherit;
 }
-.menu__item a:active {
+.menu__link:active {
   color: inherit;
+}
+.color-changer {
+  display: none;
 }

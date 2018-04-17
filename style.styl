@@ -7,6 +7,8 @@ $border-color = #010101
 body
   background #fff
   font-family Arial
+  padding 0
+  margin 0
 
 p
   line-height 1.5rem
@@ -16,6 +18,7 @@ p
   &:last-child
     margin-bottom 0
 
+// Page
 .page
   position relative
   margin 0 auto
@@ -44,22 +47,30 @@ p
   &:before
     left 0
     right 0
-    background #72c4f6
     z-index -2
+
+  #color-1:checked ~ &:before
+    transition 1s background
+    background #72c4f6
+  #color-2:checked ~ &:before
+    transition 1s background
+    background #ff8283
+  #color-3:checked ~ &:before
+    transition 1s background
+    background #ffe05d
+
 
   &__header
 
     min-height 550px
 
   &__content
-    //background #cfc
     flex-grow 2
 
   &__footer
     background transparent
     border-top 2px solid $border-color
     padding 80px 96px
-    //width 468px
 
 // header
 .header
@@ -139,10 +150,14 @@ p
       border-radius 150px
       border 2px solid transparent
       padding 4px
-      margin-bottom 0
       position relative
+      display block
 
-      &:hover
+      &:hover,
+      #color-1:checked ~ .page &[for="color-1"],
+      #color-2:checked ~ .page &[for="color-2"],
+      #color-3:checked ~ .page &[for="color-3"]
+        transition 1s border-color
         border-color #fff
 
     &__avatar
@@ -211,8 +226,6 @@ p
     position relative
     top 70px
 
-
-
 .social
   list-style none
   margin 0
@@ -261,13 +274,16 @@ p
     &_caption_copyright
       padding-left 80px
 
-    a
-      text-decoration none
+  &__link
+    text-decoration none
+    color: inherit
+
+    &:hover
+      text-decoration underline
       color: inherit
 
-      &:hover
-        text-decoration underline
-        color: inherit
+    &:active
+      color: inherit
 
-      &:active
-        color: inherit
+.color-changer
+  display none
