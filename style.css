@@ -213,6 +213,24 @@ p:last-child {
   height: 24px;
   background: #010101;
 }
+.social__link_type_fb {
+  background: url("imgs/css_sprites.png") -10px -10px;
+}
+.social__link_type_hb {
+  background: url("imgs/css_sprites.png") -54px -10px;
+}
+.social__link_type_ig {
+  background: url("imgs/css_sprites.png") -10px -54px;
+}
+.social__link_type_tw {
+  background: url("imgs/css_sprites.png") -54px -54px;
+}
+.social__link_type_vk {
+  background: url("imgs/css_sprites.png") -98px -10px;
+}
+.social__link_type_yt {
+  background: url("imgs/css_sprites.png") -98px -54px;
+}
 .menu {
   list-style: none;
   margin: 0;
