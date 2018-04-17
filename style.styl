@@ -167,7 +167,17 @@ p
       position absolute
 
 .history
-  background -22px 434px url("imgs/main_bg.png") no-repeat
+  position relative
+  &:after
+    content ""
+    display block
+    position absolute
+    z-index -1
+    top 0
+    bottom 0
+    left -40px
+    right -40px
+    background center 434px url("imgs/main_bg.png") no-repeat
 
   &__people-1
     margin-bottom 238px
