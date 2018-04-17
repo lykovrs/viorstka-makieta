@@ -5,6 +5,14 @@ body {
   background: #fff;
   font-family: Arial;
 }
+p {
+  line-height: 1.5rem;
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
 .page {
   position: relative;
   margin: 0 auto;
@@ -85,7 +93,8 @@ body {
   display: block;
   border: 2px solid #010101;
   border-radius: 4px;
-  width: 150px;
+  margin: 4px 0 12px 0;
+  width: 138px;
   height: 80px;
   background: center center url("imgs/play.png") no-repeat;
 }
@@ -93,14 +102,8 @@ body {
   display: flex;
 }
 .general-info__text {
-  margin-right: 60px;
-  max-width: 600px;
-}
-.general-info p {
-  margin-top: 0;
-}
-.history {
-  background: center 450px url("imgs/main_bg.png") no-repeat;
+  margin-right: 84px;
+  max-width: 460px;
 }
 .people {
   margin: 0;
@@ -110,9 +113,9 @@ body {
   justify-content: space-around;
 }
 .people__item {
-  width: 300px;
   text-align: center;
   font-weight: 600;
+  position: relative;
 }
 .people__figure {
   margin: 0 auto;
@@ -121,7 +124,8 @@ body {
   border-radius: 150px;
   border: 2px solid transparent;
   padding: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
+  position: relative;
 }
 .people__figure:hover {
   border-color: #fff;
@@ -130,14 +134,49 @@ body {
   width: 138px;
   height: 138px;
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -69px;
+  margin-left: -69px;
 }
 .people__name {
-  margin-bottom: 60px;
+  margin-bottom: 22px;
 }
 .people__text {
   font-weight: normal;
   text-align: center;
-  max-width: 294px;
+  width: 310px;
+  margin-left: -155px;
+  left: 50%;
+  position: absolute;
+}
+.history {
+  background: -22px 434px url("imgs/main_bg.png") no-repeat;
+}
+.history__people-1 {
+  margin-bottom: 238px;
+}
+.history__people-2 {
+  margin-top: 678px;
+}
+.history__text {
+  margin-bottom: 0;
+  width: 282px;
+  text-align: center;
+}
+.history__text_type_right {
+  position: relative;
+  left: 470px;
+}
+.history__text_step_2 {
+  margin-top: 635px;
+}
+.history__text_step_3 {
+  margin-top: 625px;
+  width: 300px;
+  position: relative;
+  left: -18px;
 }
 .footer__text {
   width: 468px;
